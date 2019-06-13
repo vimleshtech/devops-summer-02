@@ -7,9 +7,9 @@ public class ForLoop {
 		//wap to get sum of all even and odd numbers between 1 to 100
 		int se,so;
 		se=0;
-		so =0;
+		so =1;
 		
-		for(int i=1; i<=100;i++)
+		for(int i=1; i<=1000;i++)
 		{
 			//System.out.println(i);
 			if(i%2==0) //even 

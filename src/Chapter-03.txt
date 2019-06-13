@@ -1,0 +1,43 @@
+Loop :  is iterator or repeation of statement 
+=============================================
+Example:
+	1 2 3 ..10
+
+There are following fundamental of loop:
+-init 			: 1
+-condition 		: 10
+-step(incrment/decrement): +1	
+
+There are following types of loop:
+	-while loop
+		sytnax:
+		int i=1;
+		while(i<10)  //1 - 9
+		{
+
+			i++; 
+		}
+	-for loop
+		syntax:
+		for(int i=1;i<10;i++)
+		{
+
+
+
+		}
+
+
+	-do while 	: loop will execute at least once 
+			syntax:
+			int i=1;
+			do{
+				...
+				i++;
+			}while(i<1);
+
+	-forearch / advance loop  :can be use with array 
+			
+		
+
+
+Array:
