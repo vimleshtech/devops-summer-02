@@ -1,0 +1,118 @@
+Jenkins  : is CI - CD tool
+==============================
+localhost:8080
+		-default 
+		
+Jenkins service management:
+	-status
+	-restart
+	-stop
+	-start	
+  Windows  -> go to service and manage the status
+  Linux -> sudo service jenkins status 
+	sudo service jenkins restart
+	sudo service jenkins start
+	sudo service jenkins stop
+	or
+	sudo servicectl jenkins stop
+
+
+Jenkins configuration management:
+  windows: C:\Program Files (x86)\Jenkins
+    	file : config
+	    Security tab:			
+  		<useSecurity>true</useSecurity> 
+			change to false
+			<useSecurity>false</useSecurity> 
+	 JDK path:	
+		<home>C:\Program Files\Java\jdk1.8.0_121</home>
+
+	Port can be changed : C:\Program Files (x86)\Jenkins\jenkins
+			
+
+	User profile path: C:\Program Files (x86)\Jenkins\users
+
+	Credentials: C:\Program Files (x86)\Jenkins
+		credentials
+		
+
+Jenkins Plugin Configuration:
+ Manage Jenkins->	
+		Configure System
+
+		
+				E-mail Notification
+ 				-SMTP server
+
+					smtp.gmail.com
+
+					pwd:
+						pttwacsvlazuvbeo
+
+
+			Manage Jenkins > Configure Global Security > Enable security >
+					n TCP port for JNLP agents: Fixed
+
+
+
+
+		Global Tool Configuration
+			JDK installations
+				-set path of jdk 
+					C:\Program Files\Java\jdk1.8.0_121
+			Git installations
+				-set path of git 
+					C:\Program Files\Git\bin\git.exe
+
+			Maven installations  (only required for java project) : optional 
+				C:\Users\welcome\Downloads\apache-maven-3.6.0-bin\apache-maven-3.6.0
+			
+		Manage Plugins:
+				-Git  and github	
+					Git
+					Git Parameter
+					GitHub
+					GitHub Authentication
+					GitHub Integration
+					GitHub Organization Folder Plugin
+					GitHub Pull Request Coverage Status
+					Pipeline: GitHub	
+	
+				-Maven		(optional : only for java project)
+					Maven Artifact ChoiceListProvider (Nexus)
+					Maven Dependency Update Trigger
+					Maven Info Plugin
+					Maven Metadata Plugin for Jenkins CI server
+					Maven Repository Scheduled Cleanup Plugin
+
+
+				-Pipleline
+					Pipeline
+					Pipeline: Job
+					Pipeline: Multibranch with defaults
+				-Deploy the container 
+					Deploy to container
+				
+		Manage Nodes
+				Job Node Stalker
+				Node and Label parameter
+				Job and Node ownership
+
+		
+		Backup 		** Plugin 
+				Backup
+				Backup and interrupt job pluign
+				ThinBackup
+
+		
+			
+	
+		Manage Users
+		Credential Management:
+		
+	
+WebServer : Tomcat 
+============================
+	
+
+	
